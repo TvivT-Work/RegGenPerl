@@ -1979,7 +1979,7 @@ sub  read_excel_export {
         }
         $reg_one_sheet->write( 22+$reg_bit_num-2, 1, $reg_bit_name_org, $format_left_ni);
         $reg_one_sheet->write( 22+$reg_bit_num-2, 2, $reg_bit_wr_access, $format_center_ni);
-        $reg_one_sheet->write( 22+$reg_bit_num-2, 3, $reg_bit_len."\'h".$reg_bit_def_hex."(".$reg_bit_len."\'b".$reg_bit_def_bin.")", $format_left_ni);
+        $reg_one_sheet->write( 22+$reg_bit_num-2, 3, $reg_bit_len."\'h".$reg_bit_def_hex, $format_left_ni);
         $reg_one_sheet->merge_range( 22+$reg_bit_num-2, 4, 22+$reg_bit_num-2, 8, $reg_bit_descript, $format_merge_left);
   
       }
