@@ -1679,7 +1679,7 @@ sub  read_excel_export {
       
       # Basic Table
       $reg_one_sheet->write('A1 ' , "寄存器名"     , $format_center_bold);
-      $reg_one_sheet->write('A2 ' , "地址偏移值"   , $format_center_bold);
+      $reg_one_sheet->write('A2 ' , "地址"         , $format_center_bold);
       $reg_one_sheet->write('A3 ' , "复位值"       , $format_center_bold);
       $reg_one_sheet->write('A4 ' , "位"           , $format_center_bold);
       $reg_one_sheet->write('A5 ' , "位名"         , $format_center_bold);
@@ -2021,7 +2021,7 @@ sub  read_excel_export {
   
       #reg_one
       $reg_one_sheet->merge_range('B1:I1', $reg_name_org         , $format_merge_center );
-      $reg_one_sheet->merge_range('B2:I2', $reg_ofs_addr_hex_str , $format_merge_center );
+      $reg_one_sheet->merge_range('B2:I2', $reg_abs_addr_hex_str , $format_merge_center );
       $reg_one_sheet->merge_range('B3:I3', $reg_one_def_hex_str  , $format_merge_center );
   
     }

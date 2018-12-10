@@ -142,7 +142,7 @@ regend
 
 regbegin: st0_cfg
 
-  st0_cpu_debug_req_en , 9 , 1'b0 , rw, st0 cpu debug req 使能位；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
+  st0_cpu_debug_req_en , 9 , 1'b0 , rw, st0 cpu debug req 暂停计数；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
   st0_dma_sel          , 7 , 1'b0 , rw, st0 dma请求使能位；0：中断；1：dma；
   st0_int_dma_en       , 6 , 1'b0 , rw, st0 中断DMA使能位；0：不使能；1：使能；
   st0_trout_pulse      , 5 , 1'b0 , rw, st0 输出是否为一拍st0时钟的脉冲：0：保持，需要ifo_clear清除；1：脉冲；
@@ -155,7 +155,7 @@ regend
 
 regbegin: st1_cfg
 
-  st1_cpu_debug_req_en ,  9 , 1'b0 , rw, st1 cpu debug req 使能位；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
+  st1_cpu_debug_req_en ,  9 , 1'b0 , rw, st1 cpu debug req 暂停计数；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
   st1_chain_en         ,  8 , 1'b0 , rw, st1 级联st0 
   st1_dma_sel          ,  7 , 1'b0 , rw, st1 dma请求使能位；0：中断；1：dma； 
   st1_int_dma_en       ,  6 , 1'b0 , rw, st1 中断DMA使能位；0：不使能；1：使能；
@@ -169,7 +169,7 @@ regend
 
 regbegin: st2_cfg
 
-  st2_cpu_debug_req_en ,  9 , 1'b0 , rw, st2 cpu debug req 使能位；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
+  st2_cpu_debug_req_en ,  9 , 1'b0 , rw, st2 cpu debug req 暂停计数；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
   st2_chain_en         ,  8 , 1'b0 , rw, st2 级联st1 
   st2_dma_sel          ,  7 , 1'b0 , rw, st2 dma请求使能位；0：中断；1：dma；  
   st2_int_dma_en       ,  6 , 1'b0 , rw, st2 中断DMA使能位；0：不使能；1：使能；
@@ -183,7 +183,7 @@ regend
 
 regbegin: st3_cfg
 
-  st3_cpu_debug_req_en ,  9 , 1'b0 , rw, st3 cpu debug req 使能位；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
+  st3_cpu_debug_req_en ,  9 , 1'b0 , rw, st3 cpu debug req 暂停计数；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
   st3_chain_en         ,  8 , 1'b0 , rw, st3 级联st2 
   st3_dma_sel          ,  7 , 1'b0 , rw, st3 dma请求使能位；0：中断；1：dma；   
   st3_int_dma_en       ,  6 , 1'b0 , rw, st3 中断DMA使能位；0：不使能；1：使能；
@@ -197,7 +197,7 @@ regend
 
 regbegin: st4_cfg
 
-  st4_cpu_debug_req_en ,  9 , 1'b0 , rw, st4 cpu debug req 使能位；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
+  st4_cpu_debug_req_en ,  9 , 1'b0 , rw, st4 cpu debug req 暂停计数；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
   st4_chain_en         ,  8 , 1'b0 , rw, st4 级联st3 
   st4_dma_sel          ,  7 , 1'b0 , rw, st4 dma请求使能位；0：中断；1：dma；   
   st4_int_dma_en       ,  6 , 1'b0 , rw, st4 中断DMA使能位；0：不使能；1：使能；
@@ -211,7 +211,7 @@ regend
 
 regbegin: st5_cfg
 
-  st5_cpu_debug_req_en ,  9 , 1'b0 , rw, st5 cpu debug req 使能位；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
+  st5_cpu_debug_req_en ,  9 , 1'b0 , rw, st5 cpu debug req 暂停计数；0：cpu debug req 起来后继续计数；1：cpu debug req 起来后暂停计数；
   st5_chain_en         ,  8 , 1'b0 , rw, st5 级联st4 
   st5_dma_sel          ,  7 , 1'b0 , rw, st5 dma请求使能位；0：中断；1：dma；   
   st5_int_dma_en       ,  6 , 1'b0 , rw, st5 中断DMA使能位；0：不使能；1：使能；
